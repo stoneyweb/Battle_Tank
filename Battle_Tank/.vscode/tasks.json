@@ -1,0 +1,1247 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Battle_Tank Win32 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"Win32",
+				"Debug",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win32 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"Win32",
+				"Debug",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank Win32 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win32 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Battle_Tank",
+				"Win32",
+				"Debug",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win32 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"Win32",
+				"DebugGame",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win32 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"Win32",
+				"DebugGame",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank Win32 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win32 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Battle_Tank",
+				"Win32",
+				"DebugGame",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win32 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"Win32",
+				"Development",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win32 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"Win32",
+				"Development",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank Win32 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win32 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Battle_Tank",
+				"Win32",
+				"Development",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win32 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"Win32",
+				"Shipping",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win32 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"Win32",
+				"Shipping",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank Win32 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win32 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Battle_Tank",
+				"Win32",
+				"Shipping",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win32 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"Win32",
+				"Test",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win32 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"Win32",
+				"Test",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank Win32 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win32 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Battle_Tank",
+				"Win32",
+				"Test",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"Win64",
+				"Debug",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"Win64",
+				"Debug",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Battle_Tank",
+				"Win64",
+				"Debug",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"Win64",
+				"DebugGame",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"Win64",
+				"DebugGame",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Battle_Tank",
+				"Win64",
+				"DebugGame",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"Win64",
+				"Development",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"Win64",
+				"Development",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Battle_Tank",
+				"Win64",
+				"Development",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win64 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"Win64",
+				"Shipping",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"Win64",
+				"Shipping",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank Win64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win64 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Battle_Tank",
+				"Win64",
+				"Shipping",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win64 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"Win64",
+				"Test",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win64 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"Win64",
+				"Test",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank Win64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank Win64 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Battle_Tank",
+				"Win64",
+				"Test",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"Debug",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"Debug",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"Debug",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"DebugGame",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"DebugGame",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"DebugGame",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"Development",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"Development",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"Development",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"Shipping",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"Shipping",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"Shipping",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"Test",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"Test",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"Test",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"Debug",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"Debug",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank HTML5 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"Debug",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"DebugGame",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"DebugGame",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank HTML5 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"DebugGame",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"Development",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"Development",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank HTML5 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"Development",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"Shipping",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"Shipping",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank HTML5 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"Shipping",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"Test",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"Test",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank HTML5 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"Test",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_TankEditor Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_TankEditor",
+				"Win64",
+				"Debug",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_TankEditor Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_TankEditor",
+				"Win64",
+				"Debug",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_TankEditor Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_TankEditor Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Battle_TankEditor",
+				"Win64",
+				"Debug",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_TankEditor Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_TankEditor",
+				"Win64",
+				"DebugGame",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_TankEditor Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_TankEditor",
+				"Win64",
+				"DebugGame",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_TankEditor Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_TankEditor Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Battle_TankEditor",
+				"Win64",
+				"DebugGame",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_TankEditor Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_TankEditor",
+				"Win64",
+				"Development",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_TankEditor Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Battle_TankEditor",
+				"Win64",
+				"Development",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_TankEditor Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		},
+		{
+			"label": "Battle_TankEditor Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Battle_TankEditor",
+				"Win64",
+				"Development",
+				"'E:\\game_dev\\c++ Course\\Section_04\\Battle_Tank\\Battle_Tank\\Battle_Tank.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\game_dev\\Epic Games\\UE_4.19"
+			}
+		}
+	]
+}
