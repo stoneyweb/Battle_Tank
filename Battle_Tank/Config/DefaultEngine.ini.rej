@@ -1,0 +1,9 @@
+diff a/Battle_Tank/Config/DefaultEngine.ini b/Battle_Tank/Config/DefaultEngine.ini	(rejected hunks)
+@@ -51,7 +51,4 @@
+ InitialAverageFrameRate=0.016667
+ PhysXTreeRebuildRate=10
+ 
+-[/Script/EngineSettings.GameMapsSettings]
+-EditorStartupMap=/Game/Battleground.Battleground
+-GameDefaultMap=/Game/Battleground.Battleground
+ 
