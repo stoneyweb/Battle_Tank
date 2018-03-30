@@ -8,20 +8,20 @@
 #include "TankAiController.generated.h"
 
 /**
- * 
- */
+*
+*/
 UCLASS()
 class BATTLE_TANK_API ATankAiController : public AAIController
 {
 	GENERATED_BODY()
-	
-	public:
-	 virtual void BeginPlay() override;
+
+public:
+	virtual void BeginPlay() override;
 
 
-	 ATank *GetControlledTank() const;
-	 ATank *GetPlayerTank() const;
-	 
-	
-	
+	ATank *GetControlledTank() const;
+	ATank *GetPlayerTank() const;
+
+
+
 };
