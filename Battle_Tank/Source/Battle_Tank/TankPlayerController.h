@@ -15,11 +15,17 @@ class BATTLE_TANK_API ATankPlayerController : public APlayerController
 {
 	GENERATED_BODY()
 	 
-	 public:
+	 private:
 	 virtual void BeginPlay() override;
 	 virtual void Tick(float DeltaTime) override;
 	 
-	 ATank *GetControlledTank() const;
+	 UPROPERTY(EditAnywhere)
+	 float CrossHairXLocation =0.5;
+
+	 UPROPERTY(EditAnywhere)
+	 float CrossHairYLocation =0.33333;
+	 
+	ATank *GetControlledTank() const;
 	 void AimTowardsCrosshair();
 
 	 //Return an OUT parameter, true if hit landscape
