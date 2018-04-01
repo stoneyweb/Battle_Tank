@@ -3,6 +3,7 @@
 #include "TankAiController.h"
 #include "Engine/World.h"
 #include "Battle_Tank.h"
+#include "Tank.h"
 
 
 
