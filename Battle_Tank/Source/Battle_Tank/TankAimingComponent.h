@@ -22,14 +22,15 @@ protected:
 	virtual void BeginPlay() override;
 
 public:	
+	// Sets default values for this component's properties
 	UTankAimingComponent();
 
 	void SetBarrellReference(UStaticMeshComponent *BarrelToSet);
 
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
-	void AimAt(FVector HitLocation);
-	// Sets default values for this component's properties
+	void AimAt(FVector HitLocation, float LaunchSpeed);
+	
 	
 
 		
