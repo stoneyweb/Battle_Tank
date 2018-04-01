@@ -9,20 +9,20 @@
 #include "GameFramework/Pawn.h"
 #include "TankAimingComponent.generated.h"
 
-
+class UTankBarrel; //forward declaration
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class BATTLE_TANK_API UTankAimingComponent : public UActorComponent
 {
 	GENERATED_BODY()
 
 private:
-	UStaticMeshComponent *Barrel = nullptr;
+	UTankBarrel *Barrel = nullptr;
 	void MoveBarrelTowards(FVector AimDirection);
 
 public:	
 	// Sets default values for this component's properties
 	UTankAimingComponent();
-	void SetBarrellReference(UStaticMeshComponent *BarrelToSet);
+	void SetBarrellReference(UTankBarrel *BarrelToSet);
 
 	//TODO set turret reference
 
