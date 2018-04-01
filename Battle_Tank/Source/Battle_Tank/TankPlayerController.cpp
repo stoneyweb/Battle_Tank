@@ -89,7 +89,7 @@ bool ATankPlayerController::GetLookVectorHitLocation(FVector LookDirection, FVec
 	}
 	
 	HitLocation = FVector(0);
-	UE_LOG(LogTemp, Error, TEXT("No Target in sight,Sir!"))
+	//UE_LOG(LogTemp, Error, TEXT("No Target in sight,Sir!"))
 	
 	return false;
 }
