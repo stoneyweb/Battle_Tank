@@ -25,6 +25,22 @@ void ATankAiController::BeginPlay()
 
 }
 
+void ATankAiController::Tick(float DeltaTime)
+{
+	FVector HitLocation = GetPlayerTank()->GetActorLocation();
+	FString AiTank = GetName();
+
+	Super::Tick(DeltaTime);
+
+	if (GetPlayerTank())
+	{
+		// Aim Towards the player
+		GetControlledTank()->AimAt(HitLocation);
+		//UE_LOG(LogTemp, Warning, TEXT("%s aiming at %s"), *AiTank, *HitLocation.ToString())
+	}
+
+}
+
 ATank *ATankAiController::GetControlledTank() const
 {
 
