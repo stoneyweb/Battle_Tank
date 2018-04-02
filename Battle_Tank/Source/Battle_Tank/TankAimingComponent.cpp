@@ -2,6 +2,7 @@
 
 #include "TankAimingComponent.h"
 #include "TankBarrel.h"
+#include "TankTurret.h"
 #include "Engine/World.h"
 
 
@@ -19,6 +20,11 @@ void UTankAimingComponent::SetBarrellReference(UTankBarrel * BarrelToSet)
 {
 	Barrel = BarrelToSet;
 	
+}
+
+void UTankAimingComponent::SetTurretReference(UTankTurret * TurretToSet)
+{
+	Turret = TurretToSet;
 }
 
 void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed)
@@ -44,6 +50,7 @@ void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed)
 		auto AimDirection = OutLaunchVelocity.GetSafeNormal();
 		auto TankName = GetOwner()->GetName();
 		MoveBarrelTowards(AimDirection);
+		RotateTurret(AimDirection);
 		UE_LOG(LogTemp, Warning, TEXT("%f Solution found"), GetWorld()->TimeSeconds)
 	}
 	else
@@ -58,11 +65,21 @@ void UTankAimingComponent::MoveBarrelTowards(FVector AimDirection)
 	auto BarrelRotator= Barrel->GetForwardVector().Rotation();
 	auto AimAsRotator = AimDirection.Rotation();
 	auto DeltaRotator = AimAsRotator - BarrelRotator;
+
 	//UE_LOG(LogTemp, Warning, TEXT("AimRotator: %s"), *AimAsRotator.ToString())
 
 
 // Move the barrel the right amount this frame
 		Barrel->Elevate(DeltaRotator.Pitch);
-		
-	//Given a max elevation speed, and the frame time
+		Turret->TurretRotation(DeltaRotator.Yaw);
+}
+
+void UTankAimingComponent::RotateTurret(FVector AimDirection)
+{
+	// Wok-out turret rotation
+	auto TurretRotator = Turret->GetForwardVector().Rotation();
+	auto AimAsRotator = AimDirection.Rotation();
+	auto DeltaRotator = AimAsRotator - TurretRotator;
+
+	Turret->TurretRotation(DeltaRotator.Yaw);
 }
