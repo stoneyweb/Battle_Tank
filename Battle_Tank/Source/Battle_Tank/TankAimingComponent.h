@@ -20,18 +20,16 @@ class BATTLE_TANK_API UTankAimingComponent : public UActorComponent
 
 private:
 	UTankBarrel *Barrel = nullptr;
+	UTankTurret *Turret = nullptr;
 	void MoveBarrelTowards(FVector AimDirection);
 
-	UTankTurret *Turret = nullptr;
-	void RotateTurret(FVector AimDirection);
-
+		
+	
 public:	
 	// Sets default values for this component's properties
 	UTankAimingComponent();
 	void SetBarrellReference(UTankBarrel *BarrelToSet);
 	void SetTurretReference(UTankTurret *TurretToSet);
-
-	//TODO set turret reference
 
 	void AimAt(FVector HitLocation, float LaunchSpeed);
 

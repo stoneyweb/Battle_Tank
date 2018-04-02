@@ -1,0 +1,13 @@
+diff a/Battle_Tank/Source/Battle_Tank/TankAimingComponent.cpp b/Battle_Tank/Source/Battle_Tank/TankAimingComponent.cpp	(rejected hunks)
+@@ -22,6 +22,11 @@
+ 	
+ }
+ 
++void UTankAimingComponent::SetTurretReference(UTankTurret * TurretToSet)
++{
++	Turret = TurretToSet;
++}
++
+ void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed)
+ {
+ 	if (!Barrel) { return; }

@@ -11,7 +11,7 @@ UTankAimingComponent::UTankAimingComponent()
 {
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
-	PrimaryComponentTick.bCanEverTick = true;
+	PrimaryComponentTick.bCanEverTick = false;
 
 	// ...
 }
@@ -30,7 +30,7 @@ void UTankAimingComponent::SetTurretReference(UTankTurret * TurretToSet)
 void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed)
 {
 	if (!Barrel) { return; }
-
+	
 	FVector OutLaunchVelocity;
 	FVector StartLocation = Barrel->GetSocketLocation(FName("Projectile"));
 	bool BHaveAimSolution = UGameplayStatics::SuggestProjectileVelocity(
@@ -50,12 +50,12 @@ void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed)
 		auto AimDirection = OutLaunchVelocity.GetSafeNormal();
 		auto TankName = GetOwner()->GetName();
 		MoveBarrelTowards(AimDirection);
-		RotateTurret(AimDirection);
-		UE_LOG(LogTemp, Warning, TEXT("%f Solution found"), GetWorld()->TimeSeconds)
+		UE_LOG(LogTemp, Warning, TEXT("%s Solution found %s "), *HitLocation.ToString(),*TankName)
 	}
 	else
 	{	
-		UE_LOG(LogTemp, Warning, TEXT("%f No Solution found"), GetWorld()->TimeSeconds)
+		//UE_LOG(LogTemp, Warning, TEXT("%f No Solution found"), GetWorld()->TimeSeconds)
+			
 	}
 }
 
@@ -69,17 +69,11 @@ void UTankAimingComponent::MoveBarrelTowards(FVector AimDirection)
 	//UE_LOG(LogTemp, Warning, TEXT("AimRotator: %s"), *AimAsRotator.ToString())
 
 
-// Move the barrel the right amount this frame
+// Move the barrel and turret the right amount this frame
 		Barrel->Elevate(DeltaRotator.Pitch);
 		Turret->TurretRotation(DeltaRotator.Yaw);
+		
 }
 
-void UTankAimingComponent::RotateTurret(FVector AimDirection)
-{
-	// Wok-out turret rotation
-	auto TurretRotator = Turret->GetForwardVector().Rotation();
-	auto AimAsRotator = AimDirection.Rotation();
-	auto DeltaRotator = AimAsRotator - TurretRotator;
 
-	Turret->TurretRotation(DeltaRotator.Yaw);
-}
+
