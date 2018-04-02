@@ -2,6 +2,7 @@
 
 #include "TankAimingComponent.h"
 #include "TankBarrel.h"
+#include "Engine/World.h"
 
 
 // Sets default values for this component's properties
@@ -43,11 +44,11 @@ void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed)
 		auto AimDirection = OutLaunchVelocity.GetSafeNormal();
 		auto TankName = GetOwner()->GetName();
 		MoveBarrelTowards(AimDirection);
-		UE_LOG(LogTemp, Warning, TEXT("Solution found"))
+		UE_LOG(LogTemp, Warning, TEXT("%f Solution found"), GetWorld()->TimeSeconds)
 	}
 	else
 	{	
-		UE_LOG(LogTemp, Warning, TEXT("No Solution found"))
+		UE_LOG(LogTemp, Warning, TEXT("%f No Solution found"), GetWorld()->TimeSeconds)
 	}
 }
 
@@ -61,7 +62,7 @@ void UTankAimingComponent::MoveBarrelTowards(FVector AimDirection)
 
 
 // Move the barrel the right amount this frame
-		Barrel->Elevate(5.0f);
+		Barrel->Elevate(DeltaRotator.Pitch);
 		
 	//Given a max elevation speed, and the frame time
 }

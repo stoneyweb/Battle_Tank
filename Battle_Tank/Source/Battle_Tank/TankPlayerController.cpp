@@ -47,7 +47,7 @@ void ATankPlayerController::AimTowardsCrosshair()
 	FVector HitLocation; // out parameter
 	if (GetSightRayHitLocation(HitLocation)) // has side-effect going to line trace
 	{
-		//TODO tell controlled tank to aim at this point
+		//controlled Tank aim at this point
 		GetControlledTank()->AimAt(HitLocation);
 	}
 
@@ -90,8 +90,7 @@ bool ATankPlayerController::GetLookVectorHitLocation(FVector LookDirection, FVec
 	}
 	
 	HitLocation = FVector(0);
-	//UE_LOG(LogTemp, Error, TEXT("No Target in sight,Sir!"))
-	
+		
 	return false;
 }
 
