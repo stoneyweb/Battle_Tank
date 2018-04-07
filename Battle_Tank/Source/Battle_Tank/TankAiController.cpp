@@ -21,10 +21,14 @@ void ATankAiController::Tick(float DeltaTime)
 
 	auto PlayerTank = Cast<ATank>(GetWorld()->GetFirstPlayerController()->GetPawn());
 	auto ControlledTank = Cast<ATank>(GetPawn());
+	
 
 	
 	if (PlayerTank)
 	{
+		// Move Towards the Player
+		MoveToActor(PlayerTank,AcceptanceRadius); // TODO Check if Distance is in cm
+		
 		// Aim Towards the player
 		ControlledTank->AimAt(PlayerTank->GetActorLocation());
 
