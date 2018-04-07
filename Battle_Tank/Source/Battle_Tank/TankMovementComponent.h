@@ -27,10 +27,12 @@ public:
 		UFUNCTION(BlueprintCallable, Category = Setup)
 		void IntendTurnRight(float Throw);
 
-		//TODO check for best protection
-		virtual void RequestDirectMove(const FVector& MoveVelocity, bool bForceMaxSpeed) override;
+		
 
 private:
+
+	//called from the pathfinfing logic by the ai controller
+	virtual void RequestDirectMove(const FVector& MoveVelocity, bool bForceMaxSpeed) override;
 
 	UTankTrack *LeftTrack = nullptr;
 	UTankTrack *RightTrack = nullptr;
