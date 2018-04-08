@@ -17,6 +17,11 @@ class BATTLE_TANK_API ATankPlayerController : public APlayerController
 {
 	GENERATED_BODY()
 
+protected:
+
+	UFUNCTION(BlueprintCallable = Setup)
+	ATank *GetControlledTank() const;
+
 private:
 	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaTime) override;
@@ -30,8 +35,7 @@ private:
 	UPROPERTY(EditDefaultsOnly)
 		float LineTraceRange = 1000000;
 
-
-	ATank *GetControlledTank() const;
+		
 	void AimTowardsCrosshair();
 
 	//Return an OUT parameter, true if hit landscape
