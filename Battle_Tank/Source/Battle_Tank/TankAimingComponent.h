@@ -9,6 +9,18 @@
 #include "GameFramework/Pawn.h"
 #include "TankAimingComponent.generated.h"
 
+
+// Enum for Aiming State
+
+UENUM()
+enum class EFiringState : uint8
+{
+	Reloading,
+	Aiming,
+	Locked
+};
+
+
 //forward declaration
 class UTankBarrel; 
 class UTankTurret;
@@ -18,9 +30,14 @@ class BATTLE_TANK_API UTankAimingComponent : public UActorComponent
 {
 	GENERATED_BODY()
 
+protected:
+	UPROPERTY(BlueprintReadOnly, Category = "State")
+	EFiringState FiringState = EFiringState::Aiming;
+
 private:
 	UTankBarrel *Barrel = nullptr;
 	UTankTurret *Turret = nullptr;
+
 	void MoveBarrelTowards(FVector AimDirection);
 
 		

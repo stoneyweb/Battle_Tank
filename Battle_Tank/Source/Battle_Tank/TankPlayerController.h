@@ -19,7 +19,7 @@ class BATTLE_TANK_API ATankPlayerController : public APlayerController
 
 protected:
 
-	UFUNCTION(BlueprintCallable = Setup)
+	UFUNCTION(BlueprintCallable, Category = "Setup")
 	ATank *GetControlledTank() const;
 
 private:
