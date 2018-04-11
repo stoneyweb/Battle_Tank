@@ -12,6 +12,7 @@
 
 //forward declaration
 class ATank;
+class UTankAimingComponent;
 UCLASS()
 class BATTLE_TANK_API ATankPlayerController : public APlayerController
 {
@@ -21,6 +22,9 @@ protected:
 
 	UFUNCTION(BlueprintCallable, Category = "Setup")
 	ATank *GetControlledTank() const;
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Setup")
+	void FoundAimingComponent(UTankAimingComponent *AimingCompRef);
 
 private:
 	virtual void BeginPlay() override;

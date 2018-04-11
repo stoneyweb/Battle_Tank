@@ -32,7 +32,7 @@ class BATTLE_TANK_API UTankAimingComponent : public UActorComponent
 
 protected:
 	UPROPERTY(BlueprintReadOnly, Category = "State")
-	EFiringState FiringState = EFiringState::Aiming;
+	EFiringState FiringState = EFiringState::Reloading;
 
 private:
 	// Sets default values for this component's properties
