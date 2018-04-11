@@ -24,7 +24,7 @@ void ATankAiController::Tick(float DeltaTime)
 	
 
 	
-	if (PlayerTank)
+	if (ensure(PlayerTank))
 	{
 		// Move Towards the Player
 		MoveToActor(PlayerTank,AcceptanceRadius); // TODO Check if Distance is in cm
