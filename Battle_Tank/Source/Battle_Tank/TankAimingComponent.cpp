@@ -114,7 +114,16 @@ void UTankAimingComponent::MoveBarrelTowards(FVector AimDirection)
 	
 // Move the barrel and turret the right amount this frame
 		Barrel->Elevate(DeltaRotator.Pitch);
-		Turret->TurretRotation(DeltaRotator.Yaw);
+
+		if (DeltaRotator.Yaw < 180 )
+		{
+			Turret->TurretRotation(DeltaRotator.Yaw);
+		}
+		else
+		{
+			Turret->TurretRotation(-DeltaRotator.Yaw);
+		}
+		
 		
 }
 

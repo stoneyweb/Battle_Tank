@@ -31,7 +31,7 @@ void UTankTrack::ApplySidewaysForce()
 	auto DeltaTime = GetWorld()->GetDeltaSeconds();
 
 	// calculate the slippige speed
-	auto SlippageSpeed = FVector::CrossProduct(GetRightVector(), GetComponentVelocity());
+	auto SlippageSpeed = FVector::CrossProduct(GetRightVector(),GetComponentVelocity());
 
 	// work-out the required accelaration this frame to correct
 	auto CorrectionAccelaration = -SlippageSpeed / DeltaTime * GetRightVector();
