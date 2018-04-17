@@ -14,11 +14,12 @@ class BATTLE_TANK_API ATankAiController : public AAIController
 {
 	GENERATED_BODY()
 
-private:
+protected:
 	//How close can the AiTank get
-	float AcceptanceRadius = 3000;
+	UPROPERTY(EditAnywhere,Category = "Setup")
+	float AcceptanceRadius = 8000;
 
-public:
+private:
 	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaTime) override;
 

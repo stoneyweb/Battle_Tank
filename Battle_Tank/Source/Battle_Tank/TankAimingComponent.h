@@ -75,7 +75,7 @@ public:
 	
 	void AimAt(FVector HitLocation);
 
-	
+	EFiringState GetFiringState() const;
 	
 	
 
