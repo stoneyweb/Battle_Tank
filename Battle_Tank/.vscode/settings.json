@@ -1,0 +1,11 @@
+{
+	"files.exclude": {
+		"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/.idea": true,
+		"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/.kdev4": true,
+		"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/.vscode": true,
+		"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Content": true,
+		"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/DerivedDataCache": true,
+		"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Intermediate": true,
+		"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Saved": true
+	}
+}

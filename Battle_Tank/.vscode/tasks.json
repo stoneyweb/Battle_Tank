@@ -1,0 +1,1710 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Battle_Tank Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Mac",
+				"Debug",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Mac",
+				"Debug",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Mac",
+				"Debug",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Mac",
+				"DebugGame",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Mac",
+				"DebugGame",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Mac",
+				"DebugGame",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Mac",
+				"Development",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Mac",
+				"Development",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Mac",
+				"Development",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Mac",
+				"Shipping",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Mac",
+				"Shipping",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Mac",
+				"Shipping",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Mac",
+				"Test",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Mac",
+				"Test",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Mac",
+				"Test",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"Debug",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"Debug",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"Debug",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"DebugGame",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"DebugGame",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"DebugGame",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"Development",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"Development",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"Development",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"Shipping",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"Shipping",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"Shipping",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"Test",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"Test",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"IOS",
+				"Test",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"Debug",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"Debug",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank HTML5 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"Debug",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"DebugGame",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"DebugGame",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank HTML5 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"DebugGame",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"Development",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"Development",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank HTML5 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"Development",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"Shipping",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"Shipping",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank HTML5 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"Shipping",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"Test",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"Test",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank HTML5 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank HTML5 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"HTML5",
+				"Test",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Linux",
+				"Debug",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Linux",
+				"Debug",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Linux",
+				"Debug",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Linux",
+				"DebugGame",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Linux",
+				"DebugGame",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Linux",
+				"DebugGame",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Linux",
+				"Development",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Linux",
+				"Development",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Linux",
+				"Development",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Linux",
+				"Shipping",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Linux",
+				"Shipping",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Linux",
+				"Shipping",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Linux",
+				"Test",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Linux",
+				"Test",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"Linux",
+				"Test",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank TVOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"TVOS",
+				"Debug",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank TVOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"TVOS",
+				"Debug",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank TVOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank TVOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"TVOS",
+				"Debug",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank TVOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"TVOS",
+				"DebugGame",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank TVOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"TVOS",
+				"DebugGame",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank TVOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank TVOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"TVOS",
+				"DebugGame",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank TVOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"TVOS",
+				"Development",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank TVOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"TVOS",
+				"Development",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank TVOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank TVOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"TVOS",
+				"Development",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank TVOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"TVOS",
+				"Shipping",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank TVOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"TVOS",
+				"Shipping",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank TVOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank TVOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"TVOS",
+				"Shipping",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank TVOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"TVOS",
+				"Test",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank TVOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"TVOS",
+				"Test",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_Tank TVOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_Tank TVOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_Tank",
+				"TVOS",
+				"Test",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_TankEditor Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_TankEditor",
+				"Linux",
+				"Debug",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_TankEditor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_TankEditor",
+				"Linux",
+				"Debug",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_TankEditor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_TankEditor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_TankEditor",
+				"Linux",
+				"Debug",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_TankEditor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_TankEditor",
+				"Linux",
+				"DebugGame",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_TankEditor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_TankEditor",
+				"Linux",
+				"DebugGame",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_TankEditor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_TankEditor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_TankEditor",
+				"Linux",
+				"DebugGame",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_TankEditor Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_TankEditor",
+				"Linux",
+				"Development",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_TankEditor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_TankEditor",
+				"Linux",
+				"Development",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_TankEditor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_TankEditor Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_TankEditor",
+				"Linux",
+				"Development",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_TankEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_TankEditor",
+				"Mac",
+				"Debug",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_TankEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_TankEditor",
+				"Mac",
+				"Debug",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_TankEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_TankEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_TankEditor",
+				"Mac",
+				"Debug",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_TankEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_TankEditor",
+				"Mac",
+				"DebugGame",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_TankEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_TankEditor",
+				"Mac",
+				"DebugGame",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_TankEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_TankEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_TankEditor",
+				"Mac",
+				"DebugGame",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_TankEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_TankEditor",
+				"Mac",
+				"Development",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_TankEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_TankEditor",
+				"Mac",
+				"Development",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Battle_TankEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		},
+		{
+			"label": "Battle_TankEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Battle_TankEditor",
+				"Mac",
+				"Development",
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/stoneyweb/UnrealEngine"
+			}
+		}
+	]
+}

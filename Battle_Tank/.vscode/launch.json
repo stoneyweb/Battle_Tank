@@ -1,0 +1,106 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Battle_Tank (Debug)",
+			"request": "launch",
+			"preLaunchTask": "Battle_Tank Linux Debug Build",
+			"program": "/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Binaries/Linux/Battle_Tank-Linux-Debug",
+			"args": [
+			],
+			"cwd": "/home/stoneyweb/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Battle_Tank (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "Battle_Tank Linux DebugGame Build",
+			"program": "/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Binaries/Linux/Battle_Tank-Linux-DebugGame",
+			"args": [
+			],
+			"cwd": "/home/stoneyweb/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Battle_Tank (Development)",
+			"request": "launch",
+			"preLaunchTask": "Battle_Tank Linux Development Build",
+			"program": "/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Binaries/Linux/Battle_Tank",
+			"args": [
+			],
+			"cwd": "/home/stoneyweb/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Battle_Tank (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "Battle_Tank Linux Shipping Build",
+			"program": "/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Binaries/Linux/Battle_Tank-Linux-Shipping",
+			"args": [
+			],
+			"cwd": "/home/stoneyweb/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Battle_Tank (Test)",
+			"request": "launch",
+			"preLaunchTask": "Battle_Tank Linux Test Build",
+			"program": "/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Binaries/Linux/Battle_Tank-Linux-Test",
+			"args": [
+			],
+			"cwd": "/home/stoneyweb/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Battle_TankEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "Battle_TankEditor Linux Debug Build",
+			"program": "/home/stoneyweb/UnrealEngine/Engine/Binaries/Linux/UE4Editor-Linux-Debug",
+			"args": [
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-debug"
+			],
+			"cwd": "/home/stoneyweb/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Battle_TankEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "Battle_TankEditor Linux DebugGame Build",
+			"program": "/home/stoneyweb/UnrealEngine/Engine/Binaries/Linux/UE4Editor",
+			"args": [
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject",
+				"-debug"
+			],
+			"cwd": "/home/stoneyweb/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Battle_TankEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "Battle_TankEditor Linux Development Build",
+			"program": "/home/stoneyweb/UnrealEngine/Engine/Binaries/Linux/UE4Editor",
+			"args": [
+				"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject"
+			],
+			"cwd": "/home/stoneyweb/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/home/stoneyweb/UnrealEngine/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/home/stoneyweb/gamedev/Section_04/Battle_Tank/Battle_Tank/Battle_Tank.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/home/stoneyweb/UnrealEngine"
+		}
+	]
+}
