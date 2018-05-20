@@ -14,14 +14,15 @@ AProjectile::AProjectile()
 	// no need to protect pointer at the construction
 	
 	
-	CollisionMesh=CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Collision Mesh"));
+    CollisionMesh=CreateDefaultSubobject<UStaticMeshComponent>(FName("Collision Mesh"));
 	SetRootComponent(CollisionMesh);
 	CollisionMesh->SetNotifyRigidBodyCollision(true);
 
-	LaunchBlast=CreateDefaultSubobject<UParticleSystemComponent>(TEXT("Launch Blast"));
-	LaunchBlast->AttachToComponent(RootComponent,FAttachmentTransformRules::KeepWorldTransform);
+    LaunchBlast=CreateDefaultSubobject<UParticleSystemComponent>(FName("Launch Blast"));
+    LaunchBlast->AttachToComponent(RootComponent,FAttachmentTransformRules::KeepWorldTransform);
+
 	
-	ProjectileMovement=CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("Projectile Movement"));
+    ProjectileMovement=CreateDefaultSubobject<UProjectileMovementComponent>(FName("Projectile Movement"));
 	ProjectileMovement->bAutoActivate = false;
 
 }
