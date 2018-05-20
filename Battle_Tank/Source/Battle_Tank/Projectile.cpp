@@ -12,8 +12,16 @@ AProjectile::AProjectile()
 	PrimaryActorTick.bCanEverTick = true;
 
 	// no need to protect pointer at the construction
-	ProjectileMovement=CreateDefaultSubobject<UProjectileMovementComponent>(FName("Projectile Movement"));
 	
+	
+	CollisionMesh=CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Collision Mesh"));
+	SetRootComponent(CollisionMesh);
+	CollisionMesh->SetNotifyRigidBodyCollision(true);
+
+	LaunchBlast=CreateDefaultSubobject<UParticleSystemComponent>(TEXT("Launch Blast"));
+	LaunchBlast->AttachToComponent(RootComponent,FAttachmentTransformRules::KeepWorldTransform);
+	
+	ProjectileMovement=CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("Projectile Movement"));
 	ProjectileMovement->bAutoActivate = false;
 
 }
