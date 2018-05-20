@@ -101,7 +101,7 @@ void UTankAimingComponent::AimAt(FVector HitLocation)
 	
 	if (BHaveAimSolution)
 	{
-		auto TankName = GetOwner()->GetName();
+        //auto TankName = GetOwner()->GetName();
 		AimDirection = OutLaunchVelocity.GetSafeNormal();
 		MoveBarrelTowards(AimDirection);
 	}
@@ -112,17 +112,17 @@ EFiringState UTankAimingComponent::GetFiringState() const
 	return FiringState;
 }
 
-int UTankAimingComponent::GetRoundsLeft() const
+int32 UTankAimingComponent::GetRoundsLeft() const
 {
 	return RoundsLeft;
 }
 
-void UTankAimingComponent::MoveBarrelTowards(FVector AimDirection)
+void UTankAimingComponent::MoveBarrelTowards(FVector AimDirectionOut)
 {
 	if (!ensure (Barrel && Turret)) { return; }
 	// Work-out difference between current barrel rotation and AimDirection
 	auto BarrelRotator= Barrel->GetForwardVector().Rotation();
-	auto AimAsRotator = AimDirection.Rotation();
+    auto AimAsRotator = AimDirectionOut.Rotation();
 	auto DeltaRotator = AimAsRotator - BarrelRotator;
 
 	
